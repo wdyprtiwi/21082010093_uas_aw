@@ -145,8 +145,8 @@ elif category == 'Composition':
 
     # Narasi
     st.write("""
-    Donut chart di atas menampilkan bagaimana komposisi persentase penjualan produk di setiap kategorinya. 
-    Dapat dilihat bahwa komposisi kategori Accessories memiliki nilai yang paling besar, yaitu 59.8% 
+    Donut chart di atas menampilkan berapa persentase penjualan produk di setiap kategorinya. 
+    Dapat dilihat bahwa komposisi kategori Accessories memiliki nilai penjualan yang paling besar, yaitu 59.8% 
     yang artinya produk pada kategori Accessories mengalami penjualan yang paling banyak.
     """)
 
