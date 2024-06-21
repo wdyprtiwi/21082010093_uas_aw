@@ -242,7 +242,7 @@ elif category == 'Relationship':
     plt.xlabel('List Price')
     plt.ylabel('Tax')
 
-    st.pyplot(fig)
+    st.pyplot(plt)
 
     # Narasi
     st.write("""
