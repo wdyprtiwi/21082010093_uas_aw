@@ -123,6 +123,13 @@ elif category == 'Composition':
 
     st.subheader("Komposisi Penjualan Per Kategori")
 
+    if st.get_option("theme.base") == "dark":
+        background_color = "#0e1117"  # Background default untuk tema dark
+        text_color = "white"
+    else:
+        background_color = "white"  # Background default untuk tema light
+        text_color = "black"
+      
     # donut chart
     fig, ax = plt.subplots()
     wedges, texts, autotexts = ax.pie(df_cps['Penjualan'], labels=df_cps['EnglishProductCategoryName'], autopct='%1.1f%%', startangle=90, wedgeprops=dict(width=0.3))
