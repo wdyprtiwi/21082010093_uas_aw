@@ -1,4 +1,3 @@
-from sqlalchemy import create_engine
 import pandas as pd
 import mysql.connector
 import streamlit as st
@@ -192,10 +191,12 @@ elif category == 'Composition':
 
     st.plotly_chart(fig)
 
-    # Narasi
+    # Narasi Chart
     st.write("""
-    Grafik di atas merupakan tampilan detail komposisi penjualan produk. Dengan grafik tersebut kita dapat melihat komposisi penjualan
-    produk berdasarkan sub category dan kategorinya.
+    Grafik di atas merupakan tampilan komposisi penjualan produk berdasarkan subcategory dalam persentase. Dengan grafik tersebut kita dapat melihat komposisi persentase 
+    penjualan produk berdasarkan sub category dan kategorinya. Pada produk category Accessories komposisi penjualan yang paling besar adalah
+    Tires and Tubes dengan persentase 48%. Kemudian pada produk category Bikes, komposisi penjualan yang paling besar adalah Road and Bikes dengan
+    persentase 53%. Dan yang terakhir pada produk category Clothing, komposisi penjualan yang paling besar adalah Jerseys dengan persentase 36.6%
     """)
 
 # grafik untuk aspek distribusi
