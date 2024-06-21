@@ -248,7 +248,7 @@ elif category == 'Relationship':
 
     # Narasi
     st.write("""
-    scatter plot di atas menampilkan apakah terdapat hubungan antara harga produk dengan pajak yang harus dibayar oleh customer. 
-    Grafik tersebut menunjukkan bahwa adanya hubungan dari kedua variabel tersebut. Jadi, semakin mahal barang yang dibeli oleh customer
-    maka tax yang dibayar oleh customer semakin tinggi juga.
+    Scatter plot di atas menampilkan apakah terdapat hubungan antara harga produk dengan pajak yang harus dibayarkan oleh customer. 
+    Grafik menunjukkan bahwa adanya hubungan dari kedua variabel tersebut. Jadi, semakin mahal barang yang dibeli oleh customer
+    maka tax atau pajak yang dibayar oleh customer semakin tinggi juga.
     """)
