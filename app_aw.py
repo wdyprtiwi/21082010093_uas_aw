@@ -121,7 +121,7 @@ elif category == 'Composition':
 
     df_cps = run_query(query_cps)
 
-    st.subheader("Komposisi Penjualan Per Kategori")
+    st.subheader("Komposisi Penjualan Produk Berdasarkan Kategori")
 
     if st.get_option("theme.base") == "dark":
         background_color = "#0e1117"  # Background default untuk tema dark
@@ -195,9 +195,11 @@ elif category == 'Composition':
     # Narasi Chart
     st.write("""
     Grafik di atas merupakan tampilan komposisi penjualan produk berdasarkan subcategory dalam persentase. Dengan grafik tersebut kita dapat melihat komposisi persentase 
-    penjualan produk berdasarkan sub category dan kategorinya. Pada produk category Accessories komposisi penjualan yang paling besar adalah
-    Tires and Tubes dengan persentase 48%. Kemudian pada produk category Bikes, komposisi penjualan yang paling besar adalah Road and Bikes dengan
-    persentase 53%. Dan yang terakhir pada produk category Clothing, komposisi penjualan yang paling besar adalah Jerseys dengan persentase 36.6%
+    penjualan produk berdasarkan sub category dan kategorinya. Pada produk category Accessories komposisi top 3 penjualan yang paling besar adalah
+    Tires and Tubes dengan persentase 48%, Bottles and Cages dengan persentase 22.1%, dan Helmets dengan persentase 17.8%. 
+    Kemudian pada produk category Bikes, komposisi top 3 penjualan yang paling besar adalah Road and Bikes dengan persentase 53%, Mountain Bikes dengan persentase 32.6%, dan 
+    Touring Bikes dengan persentase 14.2%. Dan yang terakhir pada produk category Clothing, komposisi top 3 penjualan yang paling besar adalah Jerseys 
+    dengan persentase 36.6%, Caps dengan persentase 24.1%, dan Gloves dengan persentase 15.7%
     """)
 
 # grafik untuk aspek distribusi
