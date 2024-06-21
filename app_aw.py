@@ -237,10 +237,10 @@ elif category == 'Relationship':
     df_rlt = run_query(query_rlt)
     st.header("Hubungan Antara Harga Produk dan Pajak")
 
-    fig, ax = plt.subplot()
-    ax.scatter(data=df_rlt, x='ListPrice', y='TaxAmt')
-    ax.set_xlabel('List Price')
-    ax.set_ylabel('Tax')
+    plt.figure(figsize=(8, 6))
+    sns.scatterplot(data=df_rlt, x='ListPrice', y='TaxAmt')
+    plt.xlabel('List Price')
+    plt.ylabel('Tax')
 
     st.pyplot(fig)
 
