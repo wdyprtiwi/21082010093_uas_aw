@@ -6,3 +6,4 @@ seaborn
 pymysql
 numpy
 sqlalchemy
+mysql-connector-python
