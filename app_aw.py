@@ -41,6 +41,7 @@ kategori = pd.DataFrame({
 
 # Sidebar untuk memilih kategori
 with st.sidebar:
+    st.write('# Final Project Data Visualisasi')
     category = st.sidebar.selectbox('Pilih Kategori', kategori['Category'].unique())
 
 # grafik untuk aspek comparasion
