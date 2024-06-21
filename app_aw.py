@@ -47,8 +47,8 @@ if category == 'Comparison':
     st.subheader('Perbandingan Penjualan Subcategory')
     st.bar_chart(data=df_comp, x='subcategory', y='Penjualan')
     st.write("""
-    Berdasarkan grafik tersebut dapat dilihat bahwa penjualan produk yang paling laris ada pada subcategory 
-    Tires and Tubes dengan total 17322.
+    Berdasarkan grafik tersebut dapat dilihat bahwa top 3 penjualan produk yang paling laris ada pada subcategory Tires and Tubes dengan total 17322,
+    kemudian Road Bikes dengan total 8068, dan Bottles and Cages dengan total 7981.
     """)
 
     query_comp2 = """
