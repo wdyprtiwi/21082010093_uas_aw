@@ -65,7 +65,7 @@ if category == 'Comparison':
     st.bar_chart(data=df_comp, x='subcategory', y='Penjualan')
     st.write("""
     Bar chart di atas menjelaskan perbandingan penjualan produk dari setiap sub categorynya.
-    Berdasarkan grafik di atas dapat dilihat bahwa penjualan paling laris ada pada subcategory ‘Tires and Tubes’.
+    Berdasarkan grafik tersebut dapat dilihat bahwa penjualan produk yang paling laris ada pada subcategory Tires and Tubes dengan total 17322.
     """)
 
     query_comp2 = """
@@ -78,7 +78,7 @@ if category == 'Comparison':
 
     df_comp2 = run_query(query_comp2)
 
-    st.subheader('Trend Penjualan per Kuartal di Setiap Tahun')
+    st.subheader('Trend Penjualan Pada Setiap Kuartal')
 
     fig, ax = plt.subplots(figsize=(10, 6))
 
@@ -123,13 +123,6 @@ elif category == 'Composition':
 
     st.subheader("Komposisi Penjualan Per Kategori")
 
-    if st.get_option("theme.base") == "dark":
-        background_color = "#0e1117"  # Background default untuk tema dark
-        text_color = "white"
-    else:
-        background_color = "white"  # Background default untuk tema light
-        text_color = "black"
-
     # donut chart
     fig, ax = plt.subplots()
     wedges, texts, autotexts = ax.pie(df_cps['Penjualan'], labels=df_cps['EnglishProductCategoryName'], autopct='%1.1f%%', startangle=90, wedgeprops=dict(width=0.3))
@@ -145,9 +138,9 @@ elif category == 'Composition':
 
     # Narasi
     st.write("""
-    Donut chart di atas menampilkan bagaimana komposisi penjualan produk di setiap kategorinya. 
-    Dapat dilihat bahwa komposisi kategori ‘Accessories’ memiliki nilai yang paling besar, yaitu 59.8% 
-    yang artinya produk pada kategori ‘Accessories’ mengalami penjualan yang banyak.
+    Donut chart di atas menampilkan bagaimana komposisi persentase penjualan produk di setiap kategorinya. 
+    Dapat dilihat bahwa komposisi kategori Accessories memiliki nilai yang paling besar, yaitu 59.8% 
+    yang artinya produk pada kategori Accessories mengalami penjualan yang paling banyak.
     """)
 
     # Stacked 100%
@@ -224,8 +217,8 @@ elif category == 'Distribution':
 
     # Narasi
     st.write("""
-    Histogram yang menampilkan umur pelanggan yang melakukan transaksi. 
-    Dapat dilihat bahwa mayoritas pelanggan adventure works yang melakukan transaksi ada pada rentang umur 50-60 an.
+    Histogram yang menampilkan umur pelanggan yang pernah melakukan transaksi. 
+    Dapat dilihat bahwa mayoritas pelanggan adventure works yang pernah melakukan transaksi ada pada rentang umur 50-60 an.
     """)
 
 # grafik untuk aspek relationship
